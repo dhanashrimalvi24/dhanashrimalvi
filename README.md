@@ -1,2 +1,0 @@
-# dhanashrimalvi
-My portfolio website
