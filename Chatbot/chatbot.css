@@ -1,0 +1,284 @@
+/* * {
+    font-size: 1.3vw;
+    font-family: "Epilogue", sans-serif;
+  }
+  
+  html {
+    --scrollbarBG: #fff;
+    --thumbBG: #90a4ae;
+  }
+  
+  body {
+    background: #ccc;
+  }
+  body .card {
+    height: 45vw;
+    width: 35vw;
+    background-color:white;
+    margin-left: 30vw;
+    margin-top: 5vw;
+    box-shadow: 2vw 2vw 12vw 3vw #ccc;
+  }
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+  body .card #header {
+    height: 5vw;
+    background: #000;
+    padding: 0vw;
+  }
+  body .card #header h1 {
+    color: #fff;
+    font-size: 2vw;
+    font-family: "Finger Paint", cursive;
+    padding: 1vw;
+  }
+  body .card #message-section::-webkit-scrollbar {
+    width: 10px;
+  }
+  body .card #message-section {
+    height: 32vw;
+    padding: 0 2.5vw;
+    overflow-y: auto;
+    background: #fff;
+    border-radius:50px;
+  }
+  body .card #message-section::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+  body .card #message-section::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+  }
+  body .card #message-section #bot,
+  body .card #message-section #user {
+    position: relative;
+    bottom: 0;
+    min-height: 1.5vw;
+    border: 0.15vw solid #777;
+    background-color: #fff;
+    border-radius: 0px 1.5vw 1.5vw 1.8vw;
+    padding: 1vw;
+    margin: 1.5vw 0;
+  }
+  body .card #message-section #user {
+    border: 1.5px solid #000;
+    border-radius: 1.5vw 0vw 1.5vw 1.8vw;
+    background-color: #000;
+    float: right;
+  }
+  body .card #message-section #user #user-response {
+    color: #fff;
+  }
+  body .card #message-section .message {
+    color: #000;
+    clear: both;
+    line-height: 1.2vw;
+    font-size: 1.2vw;
+    padding: 8px;
+    position: relative;
+    margin: 8px 0;
+    max-width: 85%;
+    word-wrap: break-word;
+    z-index: 2;
+  }
+  body .card #input-section {
+    z-index: 1;
+    padding: 0 2.5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    overflow: hidden;
+    height: 6vw;
+    width: 100%;
+  }
+  body .card #input-section input {
+    color: #000;
+    min-width: 0.5vw;
+    outline: none;
+    height: 5vw;
+    width: 26vw;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #000 0.1vw;
+  }
+  body .card .send {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    flex: 0 0 auto;
+    margin-left: 1.4vw;
+    margin-right: 0vw;
+    padding: 0;
+    position: relative;
+    outline: none;
+  }
+  body .card .send .circle {
+    position: relative;
+    width: 4.8vw;
+    height: 4.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .card .send .circle i {
+    font-size: 3vw;
+    margin-left: -1vw;
+    margin-top: 1vw;
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar{
+  width:0;
+}
+     
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+ 
+body{
+  width:100vw;
+  height:100vh;
+  overflow:hidden;
+  display:grid;
+  justify-content:center;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+#main{
+  margin:0;
+  height:100vh;
+  width:100vw;
+  max-width:540px;
+  box-shadow:inset 0 0 10px 4px #1116;
+}
+ 
+#msg_send{
+    outline:none;
+    font-size:20px;
+    padding:0 16px;
+    border-radius:32px 0 32px 32px;
+      background:#ececee;
+      color:#333;
+      border:solid 1px #777;
+      border-right:none;
+    }
+ 
+    .input{
+        height:7%;
+        background:linear-gradient(#ececee 50%, #1c1f46 50%);
+        display:grid;
+        grid-template-columns:70% 30%;
+        border-radius:32px;
+        margin:8px 16px;
+        min-height:42px;
+        box-shadow:inset 0 1px 0 #777;
+    }
+    .send{
+        outline:none;
+        font-size:20px;
+          border:none;
+          background:#1c1f46;
+          border-radius:32px;
+          color:#eee;
+          transition-duration:0.2s;
+    }
+    .send:active{
+          font-size:16px;
+    }
+ 
+    .left, .right{
+        font-size:18px;
+        display:inline-block;
+        padding:14px;
+        width:auto;
+        max-width:60%;
+        margin:8px 16px;
+          font-family:monospace;
+          word-wrap:break-word;
+    }
+ 
+    .left{
+        color:#000;
+          background:#b3bfca;
+        border-radius:0 16px 16px 16px;
+    }
+ 
+    .right{
+        float:right;
+        color:#fff;
+          background:#1c1f46;
+        border-radius:16px 16px 0 16px;
+    }
+ 
+    #msg{
+        overflow-y:scroll;
+          height:82%;
+          padding:0 12px;
+          scroll-behavior:smooth;
+    }
+ 
+h2{
+  text-align:center;
+  background:#1c1f46;
+  padding:8px;
+  font-family:sans-serif;
+  color:#fff;
+  text-shadow:1px 1px 4px #111;
+  box-shadow:0 4px 8px #000a;
+  margin-bottom:8px;
+}
+ 
+.bot{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background-size:100%;
+    margin:10px;
+}
+h3{
+    font-family:monospace;
+    font-size:20px;
+}
+#robot{
+    display:flex;
+    align-items:center;
+}
+ 
+.msgCon1, .msgCon2{
+    width:100%;
+    display:inline-block;
+}
